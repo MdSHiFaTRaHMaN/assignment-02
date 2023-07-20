@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .navber{
     color: #fff;
@@ -134,6 +135,9 @@ border-radius: 7px;
     display: flex;
     padding: 0px 100px;
 }
+.info-img{
+    grid-row-start: 1;
+}
 .info-img img{
     width: 700px;
 }
@@ -141,6 +145,7 @@ border-radius: 7px;
     margin-top: 60px;
     margin-right: 85px;
     text-align: right;
+    grid-row-start: 2;
 }
 .info-text h1{
     font-size: 35px;
@@ -170,4 +175,169 @@ border-radius: 7px;
 }
 .info-text h2{
     color: rgb(40, 35, 35);
+}
+/* game info end */
+
+/* game videos  */
+
+.game-videos-container{
+    text-align: center;
+    margin-top: 45px;
+}
+.game-videos-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.game-videos-title span{
+    color: rgb(6, 242, 242);
+}
+.game-videos-title h6{
+    margin-top: 15px;
+    color: #524848;
+}
+.game-videos{
+    display: flex;
+    justify-content: center;
+}
+.game-videos img{
+  width: 250px;
+  padding: 30px 5px;
+}
+.game-videos-img{
+    width: 265px;
+}
+.game-videos-img h4{
+    color: #675959;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* ======================= */
+
+.style-image-container{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 185px;
+}
+.image-container{
+    display: flex;
+}
+.image-container .main-image{
+    width: 550px;
+    height: 550px;
+}
+.image-container .second-image{
+    width: 200px;
+    height: 200px;
+    margin-left: -105px;
+    margin-top: 430px;
+}
+.image-container-text{
+    /* max-width: 35%; */
+    margin-top: 150px;
+}
+.image-container-text h1{
+    font-weight: 800;
+    font-size: 35px;
+}
+.image-container-text span{
+    color: aqua;
+}
+.image-container-text p{
+    font-weight: 500;
+    margin-top: 15px;
+}
+.logo{
+    display: inline-block;
+}
+@media screen and (max-width:768px) {
+    .navber-container{
+        text-align: center;
+    }
+    .navber{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1fr,1fr);
+    }
+    .navber ul{
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navber img {
+        margin-left: 65px;
+    }
+    .banner{
+        display: grid;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 350px;
+    }
+    .banner-text{
+        margin: 30px auto;
+    }
+    .banner-img img{
+        margin-right: 140px;
+    }
+    .gamer-info{
+        display: grid;
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        padding: 15px;
+    }
+    .info-img img{
+        width: 100%;
+    }
+    .info-img{
+        grid-row-start: 2;
+    }
+    .info-text{
+        text-align: center;
+        margin: 0 auto;
+        grid-row-start: 1;
+    }
+    .game-videos{
+        display: grid;
+        grid-template-columns: 1;
+        justify-content: center;  
+    }
+    .game-videos img{
+        padding: 8px 20px;
+        width: 350px;
+    }
+    .game-videos-img{
+        width: 420px;
+    }
+    .style-image-container{
+        display: grid;
+    }
+    /* .image-container{
+        width: 300px;
+
+    } */
+    .image-container-text{
+        grid-row-start: 1;
+    }
+    .style-image-container{
+        margin: 0px 70px;
+        margin-top: -100px;
+        text-align: center;
+    }
+    .image-container .main-image{
+        width: 350px;
+        height: 350px;
+    }
+    .image-container .second-image{
+        width: 130px;
+        height: 130px;
+        margin-left: -60px;
+        margin-top: 275px;
+    }
+    .image-container-text p{
+        margin-top: 55px;
+        margin-bottom: 50px;
+    }
 }
