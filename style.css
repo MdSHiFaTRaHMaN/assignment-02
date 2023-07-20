@@ -204,14 +204,34 @@
 .game-videos{
     display: flex;
     justify-content: center;
+    padding: 30px 5px;
 }
-.game-videos img{
+.photo-frem{
+    position: relative;
+}
+.photo-details{
+    position: absolute;
+    display: none;
+    top: 0;
+    margin: 80px;
+}
+
+.photo-frem img{
   width: 250px;
-  padding: 30px 5px;
 }
+
+.photo-frem img:hover{
+  opacity: 0.5;
+}
+
+.photo-frem:hover .photo-details{
+    display: block;
+}
+
 .game-videos-img{
     width: 265px;
 }
+
 .game-videos-img h4{
     color: #675959;
     margin-top: 8px;
@@ -474,12 +494,17 @@
         grid-template-columns: 1;
         justify-content: center;  
     }
-    .game-videos img{
+    .photo-frem img{
         padding: 8px 20px;
         width: 350px;
     }
     .game-videos-img{
         width: 420px;
+    }
+
+    .photo-details{
+        margin: 130px 0 0 160px;
+
     }
         /* game video section end  */
 
